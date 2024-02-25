@@ -27,7 +27,7 @@ export class BPMChangeCommand extends Command {
       return undefined;
     }
 
-    const value = parseInt(args[0], 10);
+    const value = parseFloat(args[0]);
     if (isNaN(value)) {
       return undefined;
     }
